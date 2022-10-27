@@ -1,0 +1,41 @@
+{
+  "name": "maps-webgl-codelab-solution-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack serve --progress --hot --open",
+    "build": "webpack --mode production",
+    "clear": "rd /s /q dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Muramoto",
+  "license": "Apache 2.0",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@googlemaps/js-api-loader": "^1.13.9",
+    "three": "^0.138.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "5.64",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
