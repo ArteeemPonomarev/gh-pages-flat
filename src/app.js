@@ -14,6 +14,7 @@
 import './styles.css'
 import { Loader } from '@googlemaps/js-api-loader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import Model from './flat.glb'
 import * as THREE from 'three';
 
 
@@ -55,9 +56,9 @@ function initWebGLOverlayView(map) {
   
     // load the model    
     loader = new GLTFLoader();               
-    const source = "./assets/models/uploads_files_3688322_one_living_room.glb";
+    //const source = "uploads_files_3688322_one_living_room.glb";
     loader.load(
-      source,
+      Model,
       gltf => {      
         gltf.scene.scale.set(0.1,0.1,0.1);
         gltf.scene.rotation.x = 90 * Math.PI/180; // rotations are in radians

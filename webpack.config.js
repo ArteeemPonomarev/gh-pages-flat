@@ -28,19 +28,19 @@ const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
 const CONFIG = {
-  mode,
-  target,
-  devtool,
+  mode: 'development',
+  target: 'web',
+  devtool: 'source-map',
 
   entry: {
     app: ["@babel/polyfill", path.resolve(__dirname, 'src', 'app.js')]
   },
 
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'src'),
-    }
-  },
+  // devServer: {
+  //   static: {
+  //     directory: path.join(__dirname, 'src'),
+  //   }
+  // },
 
   output: {
     path: path.join(__dirname, buildPath),
@@ -64,7 +64,7 @@ const CONFIG = {
       },
       {
         test: /\.css$/i,
-        use: [  devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.js$/,
@@ -72,7 +72,7 @@ const CONFIG = {
         exclude: path.resolve(__dirname, './node_modules/')
       },
       {
-        test: /\.(jpe?g|png|gif|svg|tga|glb|gltf|babylon|mtl|pcb|pcd|prwm|obj|mat|mp3|ogg)$/i,
+        test: /\.(gif|svg|tga|glb|gltf|babylon|mtl|pcb|pcd|prwm|obj|mat|mp3|ogg)$/i,
         use: 'file-loader',
         exclude: path.resolve(__dirname, './node_modules/')
       }
