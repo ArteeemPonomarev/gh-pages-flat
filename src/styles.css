@@ -23,7 +23,7 @@ body,
   .left {
     left: 0;
     background-color: rgb(248, 238, 238);
-    
+    margin-right: 2000px
   }
   
   /* Control the right side */
@@ -58,7 +58,7 @@ body,
 }
 #thumbs img {
     float: left;
-    margin-right: 6px;
+    margin-right: 0px;
 }
 #description {
     background: black;
@@ -70,3 +70,7 @@ body,
     margin: 5px;
 }
 #panel { position: relative; }
+
+.text-block {
+  margin-left: 25px;
+}
