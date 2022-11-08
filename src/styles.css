@@ -75,6 +75,11 @@ body,
   margin-left: 25px;
 }
 
+.roomplan {
+  width: 500px;
+  height: 500px;
+}
+
 .slick-slider {
 
 }
