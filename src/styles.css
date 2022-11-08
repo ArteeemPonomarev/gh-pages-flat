@@ -74,3 +74,38 @@ body,
 .text-block {
   margin-left: 25px;
 }
+
+.slick-slider {
+
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+
+.slick-slide {
+
+}
+
+.slick-slide.slick-active {
+
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background-image: url('chevron-down.svg') 0 0 no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+}

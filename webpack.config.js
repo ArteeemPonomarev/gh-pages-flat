@@ -72,7 +72,7 @@ const CONFIG = {
         exclude: path.resolve(__dirname, './node_modules/')
       },
       {
-        test: /\.(gif|svg|tga|glb|gltf|babylon|mtl|pcb|pcd|prwm|obj|mat|mp3|ogg)$/i,
+        test: /\.(gif|tga|glb|gltf|babylon|mtl|pcb|pcd|prwm|obj|mat|mp3|ogg)$/i,
         use: 'file-loader',
         exclude: path.resolve(__dirname, './node_modules/')
       }

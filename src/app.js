@@ -41,10 +41,10 @@ const apiOptions = {
 };
 
 const mapOptions = {
-  "tilt": 40,
-  "heading": 30,
+  "tilt": 55,
+  "heading": 280,
   "zoom": 20,
-  "center": { lat: 52.50906034246888, lng: 13.467994161521435 }, 
+  "center": { lat: 52.50859769292745, lng: 13.467473877462738}, 
   "mapId": "75b6f80f67b93337"    
 }
 
@@ -72,13 +72,12 @@ function initWebGLOverlayView(map) {
   
     // load the model    
     loader = new GLTFLoader();               
-    const source = "poly.glb";
     loader.load(
       Model,
       gltf => {      
-        gltf.scene.scale.set(0.5,0.5,0.5);
+        gltf.scene.scale.set(1,1,1);
         gltf.scene.rotation.x = 90 * Math.PI/180; // rotations are in radians
-        gltf.scene.rotation.y = 100 * Math.PI/180; // rotations are in radians
+        gltf.scene.rotation.y = 290 * Math.PI/180; // rotations are in radians
         scene.add(gltf.scene);           
       }
     );
@@ -103,7 +102,7 @@ function initWebGLOverlayView(map) {
     const latLngAltitudeLiteral = {
         lat: mapOptions.center.lat,
         lng: mapOptions.center.lng,
-        altitude: 16
+        altitude: 21
     }
 
     const matrix = transformer.fromLatLngAltitude(latLngAltitudeLiteral);
